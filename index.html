@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>CompanyName</h1>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#marketplace">Marketplace</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="loginBtn" class="btn btn-outlined">Login</button>
+                <button id="registerBtn" class="btn btn-primary">Register</button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Our Platform</h1>
+                <p>The best solution for your business needs with cutting-edge technology</p>
+                <button id="getStartedBtn" class="btn btn-primary btn-large">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <img src="/api/placeholder/500/400" alt="Hero Illustration">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>We're a team of dedicated professionals committed to providing the best services and products. Our mission is to solve complex problems with simple solutions.</p>
+                    <p>Founded in 2023, we've quickly grown to become a leader in our industry, serving thousands of customers worldwide.</p>
+                </div>
+                <div class="about-image">
+                    <img src="/api/placeholder/400/300" alt="Team Photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-cards">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/200/150" alt="Product 1">
+                    </div>
+                    <h3>Product One</h3>
+                    <p>A comprehensive solution for small businesses looking to scale.</p>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/200/150" alt="Product 2">
+                    </div>
+                    <h3>Product Two</h3>
+                    <p>Enterprise-grade tools for maximum efficiency and growth.</p>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/200/150" alt="Product 3">
+                    </div>
+                    <h3>Product Three</h3>
+                    <p>Custom solutions tailored to your unique business needs.</p>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="marketplace" class="marketplace-section">
+        <div class="container">
+            <h2>Marketplace</h2>
+            <div class="marketplace-content">
+                <p>Discover a wide range of products and services from our partners and community members.</p>
+                <div class="marketplace-categories">
+                    <div class="category">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Development</h3>
+                    </div>
+                    <div class="category">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Design</h3>
+                    </div>
+                    <div class="category">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Marketing</h3>
+                    </div>
+                    <div class="category">
+                        <i class="fas fa-server"></i>
+                        <h3>Hosting</h3>
+                    </div>
+                </div>
+                <button class="btn btn-primary">Explore Marketplace</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CompanyName</h2>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#marketplace">Marketplace</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CompanyName. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm" action="backend/login.php" method="post">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </div>
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="#" id="switchToRegister">Register now</a></p>
+                    <p><a href="#">Forgot password?</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create an Account</h2>
+            <form id="registerForm" action="backend/register.php" method="post">
+                <div class="form-group">
+                    <label for="register-name">Full Name</label>
+                    <input type="text" id="register-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm-password">Confirm Password</label>
+                    <input type="password" id="register-confirm-password" name="confirm_password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                </div>
+                <div class="form-footer">
+                    <p>Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
