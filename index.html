@@ -1,46 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HR Agency</title>
+  <title>QHR - Accurate HR Services</title>
+
+  <!-- Link to favicon -->
+  <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" />
+
+  <!-- Link to external stylesheet -->
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Icons (Font Awesome) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
 </head>
 <body>
 
   <!-- HEADER -->
-  <header>
-    <div class="header-container">
-      <button class="auth-button">Login / Sign Up</button>
-      <nav>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Open Jobs</a></li>
-          <li><a href="#">Career Management</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-      <img src="logo.png" alt="Company Logo" class="logo"/>
+  <header class="main-header">
+    <img src="images/logo.png" alt="QHR Logo" class="logo" />
+    <nav class="nav-menu">
+      <a href="#">About Us</a>
+      <a href="#">Open Jobs</a>
+      <a href="#">Career Management</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    <div class="auth-section">
+      <i class="fas fa-user"></i>
+      <button class="auth-btn">Login / Sign Up</button>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO SECTION (Diagonal Split) -->
   <section class="hero">
-    <img src="hero-image.jpg" alt="Career Hero" />
-    <h1>Your Dream Job Starts Here</h1>
+    <div class="hero-left">
+      <h1>Find Your Dream Job Today</h1>
+      <div class="search-bar">
+        <select><option>Domain</option></select>
+        <select><option>Job Title</option></select>
+        <select><option>Location</option></select>
+        <select><option>Job Type</option></select>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="images/hero-woman.png" alt="Professional Woman" />
+    </div>
   </section>
 
-  <!-- JOB SEARCH BAR -->
-  <section class="job-search">
-    <select><option>Domain</option></select>
-    <select><option>Job Title</option></select>
-    <select><option>Location</option></select>
-    <select><option>Job Type</option></select>
+  <!-- ABOUT US SECTION -->
+  <section class="about-us">
+    <div class="about-left">
+      <img src="images/about-us.jpg" alt="About Us" />
+    </div>
+    <div class="about-right">
+      <div class="about-box">חזון</div>
+      <div class="about-box">ערכים</div>
+      <div class="about-box">חדשנות</div>
+      <div class="about-box">דבר המנכ”ל</div>
+    </div>
   </section>
 
   <!-- MANAGE CAREER SECTION -->
-  <section class="career-management">
+  <section class="career">
     <h2>Manage Your Career</h2>
     <div class="career-options">
       <div class="career-item">
@@ -63,36 +85,44 @@
     <h2>Latest Blog Posts</h2>
     <div class="blog-posts">
       <div class="post">
-        <img src="blog1.jpg" alt="Blog 1" />
+        <img src="images/blog1.jpg" alt="Blog 1" />
         <p>How to ace your next interview</p>
       </div>
       <div class="post">
-        <img src="blog2.jpg" alt="Blog 2" />
+        <img src="images/blog2.jpg" alt="Blog 2" />
         <p>Top 10 careers in 2025</p>
       </div>
       <div class="post">
-        <img src="blog3.jpg" alt="Blog 3" />
+        <img src="images/blog3.jpg" alt="Blog 3" />
         <p>Building a future-proof resume</p>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <div class="footer-content">
-      <div class="footer-links">
-        <a href="#">About Us</a>
-        <a href="#">Open Jobs</a>
-        <a href="#">Career Management</a>
-        <a href="#">Contact Us</a>
-      </div>
-      <div class="footer-contact">
-        <p><strong>HR Agency</strong></p>
-        <p>123 Business St, New York, NY</p>
-        <div class="social-icons">
-          <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
-          <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
-        </div>
+  <footer class="main-footer">
+    <div class="footer-links">
+      <a href="#">About Us</a>
+      <a href="#">Open Jobs</a>
+      <a href="#">Career Management</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="footer-contact">
+      <h3>QHR</h3>
+      <p>כתובת: ידיד החולות 3, קיסריה, ישראל</p>
+      <p>טלפון: 077-5411611</p>
+      <p>אימייל: <a href="mailto:qjobs@qhr.co.il">qjobs@qhr.co.il</a></p>
+      <iframe
+        src="https://www.google.com/maps?q=ידיד החולות 3, קיסריה, ישראל&output=embed"
+        width="100%"
+        height="150"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/170465573133081?ref=embed_page"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/company/qhr--accurate-hr-services/"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
   </footer>
