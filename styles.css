@@ -1,0 +1,164 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+  }
+  
+  /* HEADER */
+  header {
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .auth-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  /* HERO */
+  .hero {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .hero img {
+    max-width: 100%;
+    height: auto;
+  }
+  .hero h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+  
+  /* JOB SEARCH */
+  .job-search {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  .job-search select {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    background-color: #cdd3df;
+    min-width: 150px;
+  }
+  
+  /* CAREER MANAGEMENT */
+  .career-management {
+    background-color: #e9ecef;
+    padding: 40px 20px;
+  }
+  .career-management h2 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .career-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .career-item {
+    background-color: #cdd3df;
+    padding: 30px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .career-item i {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  /* BLOG */
+  .blog {
+    padding: 40px 20px;
+  }
+  .blog h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .blog-posts {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .post {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .post img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 30px 20px;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .footer-links a {
+    display: block;
+    color: #fff;
+    margin-bottom: 8px;
+    text-decoration: none;
+  }
+  .footer-contact {
+    margin-top: 10px;
+  }
+  .social-icons a {
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
