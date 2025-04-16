@@ -1,0 +1,20 @@
+The following files failed to download during site export. Please check them in the designer assets view (images) or dashboard (fonts).
+
+fonts/filled-icon-font.svg
+fonts/filled-icon-font.woff
+fonts/filled-icon-font.woff2
+fonts/line-rounded-icons.svg
+fonts/line-rounded-icons.ttf
+fonts/line-rounded-icons.woff
+fonts/line-rounded-icons.woff2
+fonts/line-square-icons.svg
+fonts/line-square-icons.ttf
+fonts/line-square-icons.woff
+fonts/line-square-icons.woff2
+fonts/social-icon-font.svg
+fonts/social-icon-font.woff
+fonts/social-icon-font.woff2
+images/filled-icon-font.svg
+images/line-rounded-icons.svg
+images/line-square-icons.svg
+images/social-icon-font.svg
